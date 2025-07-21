@@ -1,0 +1,227 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+/* we dont use a # for built-in functions in html 
+but use # for div functions we created */
+
+
+/*=========================== HEADER ===============================*/
+#header{
+    position: fixed; /* the header will be fixed thus it wont move when you scroll up or down */
+    top: 0;
+    left: 0;
+    z-index: 500; /* the header will be the top most thing, meaning when you scroll the body will go under the header */
+    width: 100%;
+    height: 80px;
+    background-image: url('images/wood-bg.png');
+    background-repeat: repeat-x; /* this will repeat the image net to each other until the whole screen is covered*/    
+}
+
+#header img{ 
+    display: block; /* this means we will be able to adjust the width and height of the image */
+    margin: auto; /* used to centralise the image against its parent ( header) */
+    height: 70%;
+    padding-top: 15px;
+}
+/*=========================== TOPS-TABS ===============================*/
+
+#tabs-top{
+   position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+}
+
+#tabs-top a{
+    float: left;
+    display: block; /* allows our hyperlinks to give them a height and width */
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none; /* this removes the underline on the hyperlinks */
+    padding-top: 12px;
+}
+
+/*=========================== MAIN-HOME ===============================*/
+
+#main-home{
+    margin-top: 120px;    
+}
+
+/*=========================== BOTTOM-TABS ===============================*/
+#tabs-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+}
+
+#tabs-bottom a{
+    float: left;
+    display: block;
+    width: 50%; /* we give it a width of 50% because there are only 2 hpyerlinks so we want them to share the width equally. (equally spaced) */
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: none;
+}
+
+/*=========================== MAIN ===============================*/
+
+#main{
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat-y; /* the image will repeat vertically and not horizontally */
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px; 
+}
+
+/*=========================== INFO-BOX ===============================*/
+
+/* we use a. to class selectors instead of a # */ 
+a.info-box{ /* any hyperlinks with the class name info-box will have the below styling */
+    text-decoration: none;
+    background: rgba(255,255,255, .8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px;
+}
+
+.info-box img{ /*styling all the images on the info-box selector */
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box img.right{ /* styling an image that has a class name "Right" and is in the class named info-box */
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*=========================== INFO-BOX FULL ===============================*/
+
+#info-box-full{
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    display: block;
+    margin: auto; /* helps to center the box in the sreen */
+    margin-top: 12px;
+    padding: 10px;
+}
+
+#info-box-full img{
+    width: 100%
+}
+
+#info-box-full h3{
+    text-align: center;
+}
+
+/*=========================== WEATHER ===============================*/
+
+img.info-box-weather-icon{ /* You have an image that has a class name info-box-weather-icon*/
+    height: 30px;
+    width: 30px !important ; /* we use !important because there is a class in line 146 where the width is set to 100% so this styling will be preferred first. */
+    margin: 10px;
+    float: left;
+}
+
+
+h1.info-box-weather-icon{
+    font-size: 65px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-top: 1px solid #131313; 
+}
+
+
+/*=========================== FORM ===============================*/
+
+input{ /* no # because input is a builtin html tag */
+    width: 100%;
+    height: 25px;
+    margin: 12px 0; /* 12px will apply for top and bottom and the 0px will apply to left and right */
+    border: 1px solid #929292;
+}
+
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+
+.button{ /* remember .button is a class */
+    display: block;
+    width: 100%;
+    background-color: forestgreen;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 8px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
